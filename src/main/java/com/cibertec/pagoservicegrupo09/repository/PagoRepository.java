@@ -15,14 +15,12 @@ public class PagoRepository {
 
     @PostConstruct
     private void cargarDatosDePrueba() {
-        pagos.add(new Pago(1L, 1L, 1L, "TARJETA_CREDITO", 400.00,
-                LocalDateTime.now().minusDays(4), "AUT-0001", "APROBADO"));
-        pagos.add(new Pago(2L, 2L, 1L, "TRANSFERENCIA", 128.50,
-                LocalDateTime.now().minusDays(3), "AUT-0002", "APROBADO"));
-        pagos.add(new Pago(3L, 3L, 2L, "TARJETA_CREDITO", 300.95,
-                LocalDateTime.now().minusDays(2), "AUT-0004", "RECHAZADO"));
-        pagos.add(new Pago(4L, 4L, 2L, "TARJETA_CREDITO", 350.00,
-                LocalDateTime.now().minusDays(1), "AUT-0003", "RECHAZADO"));
+        pagos.add(new Pago(1L, 1L, 1L, "TARJETA_CREDITO", 2600.00,
+                LocalDateTime.now().minusDays(3), "AUT-0001", "APROBADO"));
+        pagos.add(new Pago(2L, 2L, 1L, "TRANSFERENCIA", 500.00,
+                LocalDateTime.now().minusDays(2), "AUT-0002", "APROBADO"));
+        pagos.add(new Pago(3L, 3L, 2L, "TARJETA_CREDITO", 450.00,
+                LocalDateTime.now().minusDays(1), "AUT-0003", "APROBADO"));
     }
 
     public Optional<Pago> buscarPorIdPedido(Long idPedido) {
