@@ -17,7 +17,7 @@ public class PagoRepository {
     private void cargarDatosDePrueba() {
         pagos.add(new Pago(1L, 1L, 1L, "TARJETA_CREDITO", 2600.00,
                 LocalDateTime.now().minusDays(3), "AUT-0001", "APROBADO"));
-        pagos.add(new Pago(2L, 2L, 1L, "TRANSFERENCIA", 500.00,
+        pagos.add(new Pago(2L, 2L, 1L, "TRANSFERENCIA", 700.00,
                 LocalDateTime.now().minusDays(2), "AUT-0002", "APROBADO"));
         pagos.add(new Pago(3L, 3L, 2L, "TARJETA_CREDITO", 450.00,
                 LocalDateTime.now().minusDays(1), "AUT-0003", "APROBADO"));
